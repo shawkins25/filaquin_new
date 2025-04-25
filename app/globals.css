@@ -1,13 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@300;400;700;900&family=Geologica:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 html,
@@ -19,7 +14,6 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -33,4 +27,37 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+h1 {
+  font-family: "Geologica", sans-serif;
+  font-size: clamp(1.85rem, 5vw, 2.15rem);
+  line-height: clamp(2.15rem, 5vw, 2.45rem);
+  font-weight: 600;
+}
+
+h2 {
+  font-size: clamp(1.45rem, 2.5vw, 2rem);
+  line-height: clamp(1.65rem, 3vw, 2.25rem);
+}
+
+h3 {
+  font-size: clamp(1.25rem, 2.5vw, 1.45rem);
+  line-height: clamp(1.45rem, 2.5vw, 1.85rem);
+}
+
+h4 {
+  font-size: clamp(1.1rem, 2vw, 1.25rem);
+  line-height: clamp(1.25rem, 2vw, 1.75rem);
+}
+
+p {
+  font-size: clamp(.9rem, 1.85vw, 1.15rem);
+  line-height: clamp(1.25rem, 2vw, 1.55rem);
+}
+
+@media (min-width: 768px) {
+  p {
+    /* margin: 1% auto; */
+  }
 }

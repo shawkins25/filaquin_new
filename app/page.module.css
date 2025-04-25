@@ -6,11 +6,28 @@
   --button-primary-hover: #383838;
   --button-secondary-hover: #f2f2f2;
 
-  font-family: var(--font-geist-sans);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_logo_container {
+  display: flex;
+  position: relative;
+  min-height: 30px;
+  width: 100%;
+}
+
+.header_logo_container img {
+  position: relative;
+  padding: 0.2rem;
 }
 
 .main {
+  font-family: "Roboto Condensed", sans-serif;
   display: flex;
   flex-direction: column;
 }
+
 
