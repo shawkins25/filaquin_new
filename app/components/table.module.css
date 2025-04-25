@@ -1,0 +1,106 @@
+.section {
+  width: 100%;
+  background-color: white;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.container {
+  max-width: 72rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.card {
+  overflow: hidden;
+}
+
+.tabs {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  border-bottom: 1px solid black;
+  padding: 0 2%;
+}
+
+.tabButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  flex: 1;
+}
+
+.activeTab {
+  background-color: black;
+  color: white;
+  height: 50px;
+}
+
+.inactiveTab {
+  background-color: white;
+  color: black;
+  height: 40px;
+}
+
+.content {
+  padding: 1.5rem;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+
+.table th,
+.table td {
+  padding: 0.5rem 1rem;
+  border: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+.table thead tr {
+  background-color: black;
+  color: white;
+}
+
+.italicText {
+  font-size: 0.875rem;
+  color: #4b5563;
+  font-style: italic;
+}
+.heading {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.paragraph {
+  color: #374151;
+  margin-bottom: 1.5rem;
+}
+
+.boldParagraph {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .tabButton {
+    flex: none;
+    min-width: 200px;
+  }
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
