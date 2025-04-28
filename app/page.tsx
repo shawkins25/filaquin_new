@@ -27,11 +27,13 @@ export default function Home() {
         <Table />
         <Bottom />
       </main>
-      <Footer logo={
+      <Footer
+        logo={
           <div className={classes.footer_logo_container}>
             <Image src={footerLogo} alt="Nutramax logo" fill />
           </div>
-        }/>
+        }
+      />
     </div>
   );
 }

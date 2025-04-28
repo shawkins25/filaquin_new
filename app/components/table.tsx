@@ -79,9 +79,9 @@ export default function Table() {
                 <div className={classes.paragraph}>
                   <h3 className={classes.heading}>Ingredients:</h3>
                   <p className={classes.paragraph}>
-                    Proprietary Blend NMXFBR4<span>&#8482;</span>: Yeast extract♦, apple fiber,
-                    yeast culture (postbiotic), and psyllium husk fiber.....2000
-                    mg.
+                    Proprietary Blend NMXFBR4<span>&#8482;</span>: Yeast
+                    extract♦, apple fiber, yeast culture (postbiotic), and
+                    psyllium husk fiber.....2000 mg.
                   </p>
                 </div>
                 <div className={classes.paragraph}>

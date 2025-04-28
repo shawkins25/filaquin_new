@@ -51,7 +51,6 @@
 }
 
 @media (min-width: 500px) {
-    
   .logos_container {
     padding: 5% 1rem 1% 1rem;
     gap: 20px;
@@ -69,7 +68,7 @@
 
   .logos_container {
     width: 55%;
-  padding: 0;
+    padding: 0;
   }
 
   .section p {

@@ -46,22 +46,23 @@ const Content = () => {
       </div>
       <div className={classes.mobile_product_outer_section}>
         <div className={classes.mobile_product_section}>
-        <div className={classes.mobile_product_img_container}>
-          <Image
-            className={classes.product_img}
-            src={filaquinBag}
-            alt={"product image"}
-            fill
-          />
+          <div className={classes.mobile_product_img_container}>
+            <Image
+              className={classes.product_img}
+              src={filaquinBag}
+              alt={"product image"}
+              fill
+            />
+          </div>
+          <div className={classes.mobile_product_logo_container}>
+            <Image
+              className={classes.logo_img}
+              src={nmxSmallLogo}
+              alt={"Nutramax logo"}
+              fill
+            />
+          </div>
         </div>
-        <div className={classes.mobile_product_logo_container}>
-          <Image
-            className={classes.logo_img}
-            src={nmxSmallLogo}
-            alt={"Nutramax logo"}
-            fill
-          />
-        </div></div>
         <p>
           *Source: Survey conducted among small animal veterinarians who
           recommended animal supplements.
