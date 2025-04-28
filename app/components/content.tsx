@@ -6,6 +6,7 @@ import Image from "next/image";
 const Content = () => {
   return (
     <div className={classes.content_section_container}>
+        <div className={classes.desktop_product_outer_section}>
       <div className={classes.desktop_product_section}>
         <div className={classes.desktop_product_img_container}>
           <Image
@@ -27,13 +28,13 @@ const Content = () => {
           *Source: Survey conducted among small animal veterinarians who
           recommended animal supplements.
         </p>
-      </div>
+      </div></div>
       <div className={classes.content_section}>
         <h1>
           Filaquin<span>&#8482;</span> Anal Gland Supplement For Dogs
         </h1>
-        <h2>Count: 132 Soft Chews</h2>
-        <ul>
+        <h3>Count: 132 Soft Chews</h3>
+        <ul className={classes.content_bullet_list}>
           {contentBullets.map((item) => (
             <li key={item} className={classes.bullet_point}>
               {item}

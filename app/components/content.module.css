@@ -4,23 +4,38 @@
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
-  padding: 3% 5%;
 }
 
-.desktop_product_section {
-  display: none;
+.content_section {
+  padding: 3% 8%;
+  margin: 5% 0;
 }
 
-.mobile_product_outer_section {
+.content_section h1 {
+    max-width: 600px;
+}
+
+.content_section h3 {
+    margin: 3% 0 0 0;
+}
+
+.content_bullet_list {
+  padding: 3% 0 3% 6%;
+}
+
+.mobile_product_outer_section,
+.desktop_product_outer_section {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
   width: 100%;
   min-height: 55vh;
+  max-width: 550px;
 }
 
-.mobile_product_section {
+.mobile_product_section,
+.desktop_product_section {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -28,12 +43,16 @@
   align-self: center;
   background: linear-gradient(#bdbfbf78, #ffffff);
   width: 75%;
-  max-width: 550px;
+  /* max-width: 550px; */
   max-height: 300px;
-  margin: 0 5%;
 }
 
-.mobile_product_img_container {
+.desktop_product_outer_section {
+  display: none;
+}
+
+.mobile_product_img_container,
+.desktop_product_img_container {
   min-width: 300px;
   position: relative;
   aspect-ratio: 0.9326;
@@ -41,7 +60,12 @@
   max-width: 450px;
 }
 
-.mobile_product_logo_container {
+/* .desktop_product_img_container{
+    max-width: 550px;
+} */
+
+.mobile_product_logo_container,
+.desktop_product_logo_container {
   min-width: 200px;
   position: relative;
   aspect-ratio: 6.773;
@@ -53,8 +77,58 @@
   font-weight: 700;
 }
 
-.mobile_product_outer_section p {
-  font-size: clamp(0.75rem, 1.5vw, 1.15rem);
-  line-height: clamp(1rem, 2vw, 1.55rem);
+.mobile_product_outer_section p,
+.desktop_product_outer_section p {
+  font-family: "Roboto Condensed", sans-serif;
+  max-width: 335px;
+  font-weight: 300;
+  margin: 5% 0;
+  text-align: center;
+  font-size: clamp(0.75rem, 1vw, 1rem);
+  line-height: clamp(1rem, 1.5vw, 1.25rem);
   color: #535559;
+}
+
+@media (min-width: 480px) {
+}
+
+@media (min-width: 480px) {
+}
+
+@media (min-width: 600px) {
+}
+
+@media (min-width: 768px) {
+  .content_section_container {
+    flex-direction: row;
+    padding: 5%;
+  }
+
+  .desktop_product_section {
+    width: 90%;
+  }
+
+  .content_section {
+    padding: 0 2%;
+    margin: 0;
+  }
+
+  .content_bullet_list {
+    padding: 1% 0 3% 3%;
+  }
+
+  .mobile_product_outer_section {
+    display: none;
+  }
+
+  .desktop_product_outer_section {
+    display: flex;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* .content_section {
+    padding: 3% 8%;
+    margin: 0;
+  } */
 }

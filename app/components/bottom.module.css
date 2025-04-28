@@ -40,14 +40,16 @@
 }
 
 .section p {
+  color: black;
+  font-weight: 400;
   position: absolute;
   top: 90%;
   left: 50%;
   text-align: center;
   transform: translate(-50%, -50%);
   width: 95%;
-  font-size: clamp(0.8rem, 1.5vw, 1.15rem);
-  line-height: clamp(1rem, 2vw, 1.55rem);
+  font-size: clamp(0.9rem, 1.5vw, 1.15rem);
+  line-height: clamp(1.1rem, 2vw, 1.55rem);
 }
 
 @media (min-width: 500px) {

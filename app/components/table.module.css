@@ -1,16 +1,15 @@
 .section {
   width: 100%;
   background-color: white;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  /* padding-top: 3rem;
+  padding-bottom: 3rem; */
 }
 
 .container {
-  max-width: 72rem;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  max-width: 1000px;
+  min-height: 75vh;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .card {
@@ -31,7 +30,6 @@
   align-items: center;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
-  padding: 0.75rem 1.5rem;
   font-size: 1rem;
   font-weight: 500;
   flex: 1;
@@ -47,6 +45,7 @@
   background-color: white;
   color: black;
   height: 40px;
+  border-bottom: none;
 }
 
 .content {
@@ -59,11 +58,20 @@
   margin-bottom: 1.5rem;
 }
 
+.table th {
+  font-weight: 500;
+}
+
 .table th,
 .table td {
+  font-family: "Roboto Condensed", sans-serif;
   padding: 0.5rem 1rem;
   border: 1px solid #e5e7eb;
-  text-align: left;
+  text-align: center;
+}
+
+.table td {
+  color: #535559;
 }
 
 .table thead tr {
@@ -74,16 +82,26 @@
 .italicText {
   font-size: 0.875rem;
   color: #4b5563;
-  font-style: italic;
 }
+
+.ingredients_container {
+  margin: 1rem 0;
+}
+
+.ingredients_container div {
+  margin: 1rem 0;
+}
+
 .heading {
-  font-weight: 500;
-  margin-bottom: 0.5rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--font-color);
 }
 
 .paragraph {
   color: #374151;
-  margin-bottom: 1.5rem;
+  margin: 0.25rem 0;
+  font-weight: 300;
 }
 
 .boldParagraph {
@@ -92,6 +110,10 @@
 }
 
 @media (min-width: 640px) {
+  .container {
+    min-height: 65vh;
+  }
+
   .tabButton {
     flex: none;
     min-width: 200px;
@@ -99,8 +121,8 @@
 }
 
 @media (min-width: 768px) {
-  .section {
+  /* .section {
     padding-top: 4rem;
     padding-bottom: 4rem;
-  }
+  } */
 }

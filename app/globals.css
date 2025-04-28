@@ -3,6 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  --font-color: #535559;
 }
 
 html,
@@ -32,7 +34,7 @@ a {
 h1 {
   font-family: "Geologica", sans-serif;
   font-size: clamp(1.5rem, 5vw, 2.15rem);
-  line-height: clamp(2rem, 5vw, 2.45rem);
+  line-height: clamp(2.15rem, 5vw, 2.45rem);
   font-weight: 600;
 }
 
@@ -42,20 +44,35 @@ h2 {
 }
 
 h3 {
-  font-size: clamp(1.25rem, 2.5vw, 1.45rem);
-  line-height: clamp(1.45rem, 2.5vw, 1.85rem);
+  color: var(--font-color);
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  line-height: clamp(1.25rem, 2vw, 1.5rem);
 }
 
 h4 {
-  font-size: clamp(1.1rem, 2vw, 1.25rem);
-  line-height: clamp(1.25rem, 2vw, 1.75rem);
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: clamp(0.9rem, 1.85vw, 1.15rem);
+  line-height: clamp(1.25rem, 2vw, 1.55rem);
+  font-weight: 700;
 }
 
 p {
+  color: var(--font-color);
   font-family: "Roboto Condensed", sans-serif;
   font-size: clamp(0.9rem, 1.85vw, 1.15rem);
   line-height: clamp(1.25rem, 2vw, 1.55rem);
 }
+
+li {
+  color: var(--font-color);
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: clamp(1rem, 1.85vw, 1.25rem);
+  line-height: clamp(1.25rem, 2vw, 1.55rem);
+  padding: .5rem 0;
+  font-weight: 300;
+}
+
+
 /* 
 @media (min-width: 768px) {
   p {
