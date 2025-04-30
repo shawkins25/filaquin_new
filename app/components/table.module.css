@@ -114,18 +114,11 @@
 
 @media (min-width: 640px) {
   .container {
-    min-height: 65vh;
+    min-height: 500px;
   }
 
   .tabButton {
     flex: none;
     min-width: 200px;
   }
-}
-
-@media (min-width: 768px) {
-  /* .section {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  } */
 }

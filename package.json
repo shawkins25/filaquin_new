@@ -12,7 +12,7 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "next": "15.3.1",
-    "@shawkins25/nmx_lib": "^0.5.6"
+    "@shawkins25/nmx_lib": "^0.5.9"
   },
   "devDependencies": {
     "typescript": "^5",
