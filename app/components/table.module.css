@@ -1,19 +1,26 @@
 .section {
   width: 100%;
   background-color: white;
-  /* padding-top: 3rem;
-  padding-bottom: 3rem; */
+}
+
+.contentWrapper {
+  overflow: hidden;
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   max-width: 1000px;
-  min-height: 600px;
+  min-height: 575px;
   margin: 0 auto;
   padding: 0 1rem;
 }
 
 .card {
   overflow: hidden;
+  width: 100%;
 }
 
 .tabs {
@@ -33,6 +40,7 @@
   font-size: 1rem;
   font-weight: 500;
   flex: 1;
+  cursor: pointer;
 }
 
 .activeTab {
@@ -53,6 +61,7 @@
 
 .content {
   padding: 1.5rem;
+  width: 100%;
 }
 
 .table {
