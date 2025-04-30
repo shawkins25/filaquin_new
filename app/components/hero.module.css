@@ -26,25 +26,20 @@
 }
 
 .hero_content_container h1 {
+  color: black;
   max-width: 600px;
 }
 
 .hero_content_container p {
-    max-width: 665px;
-  }
-
-.hero_content_container h1,
-.hero_content_container p {
+  font-weight: 300;
   color: black;
-}
-
-.hero_content_container p {
   font-size: clamp(1.15rem, 1.85vw, 1.15rem);
   line-height: clamp(1.75rem, 2vw, 1.55rem);
   margin: 5% auto;
-}
+    max-width: 665px;
+  }
 
-.exclusive {
+  .hero_content_container .exclusive {
   font-weight: 700;
 }
 
@@ -94,7 +89,7 @@
 
 @media (min-width: 1024px) {
   .hero_section {
-    height: 70vh;
+    height: 80vh;
     background-image: url("/filaquin_hero_desktop_bg_v2.webp");
     background-position: center;
     justify-content: flex-start;

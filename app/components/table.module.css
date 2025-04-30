@@ -39,12 +39,15 @@
   background-color: black;
   color: white;
   height: 50px;
+  border: 1px solid var(--font-color);
+  border-bottom: none;
 }
 
 .inactiveTab {
   background-color: white;
   color: black;
   height: 40px;
+  border: 1px solid var(--font-color);
   border-bottom: none;
 }
 

@@ -13,7 +13,7 @@ const Bottom = () => {
           <Image src={vetClaimLogo} alt={"product image"} fill />
         </div>
       </div>
-      <p>
+      <p className={classes.source}>
         *Source: Survey conducted among small animal veterinarians who
         recommended animal supplements
       </p>
