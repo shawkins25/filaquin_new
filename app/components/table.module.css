@@ -7,7 +7,7 @@
 
 .container {
   max-width: 1000px;
-  min-height: 75vh;
+  min-height: 600px;
   margin: 0 auto;
   padding: 0 1rem;
 }
