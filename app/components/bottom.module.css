@@ -28,7 +28,7 @@
   align-items: center;
   width: 100%;
   padding: 8% 1rem 2% 1rem;
-  gap: 25px;
+  gap: 10px;
   max-width: 625px;
 }
 
@@ -40,7 +40,7 @@
 
 .vet_claim_container {
   position: relative;
-  width: 90%;
+  width: 55%;
   aspect-ratio: 5.465;
 }
 
@@ -61,7 +61,6 @@
 @media (min-width: 500px) {
   .logos_container {
     padding: 5% 1rem 1% 1rem;
-    gap: 20px;
   }
 }
 
