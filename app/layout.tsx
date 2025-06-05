@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Head from "next/head";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -12,16 +13,9 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// ✅ Use metadata export for global <head> values
 export const metadata: Metadata = {
   title: "Filaquin™ Anal Gland Support Soft Chews for Dogs",
-  description:
-    "Filaquin™ Anal Gland Support Soft Chews contain pre & postbiotics, beta-glucans, and NMXFBR4™ for digestive and immune health.",
-  openGraph: {
-    title: "Filaquin™ Anal Gland Support Soft Chews for Dogs",
-    description:
-      "Support your dog's anal gland, digestive, and immune health with Filaquin™ and NMXFBR4™.",
-  },
+  description: "Filaquin™ Anal Gland Support Soft Chews contain pre & postbiotics, beta-glucans, and NMXFBR4™ to support your dog's anal gland, digestive, & immune health.",
 };
 
 export default function RootLayout({
