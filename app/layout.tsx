@@ -17,6 +17,7 @@ export const metadata: Metadata = {
   title: "Filaquin™ Anal Gland Support Soft Chews for Dogs",
   description:
     "Filaquin™ Anal Gland Support Soft Chews contain pre & postbiotics, beta-glucans, and NMXFBR4™ to support your dog's anal gland, digestive, & immune health.",
+     alternates: { canonical: "https://www.filaquin.com/" },
 };
 
 export default function RootLayout({
@@ -27,6 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-GZ1SMXEYPX"
           strategy="afterInteractive"

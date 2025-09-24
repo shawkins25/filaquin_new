@@ -1,0 +1,141 @@
+.button {
+  background-color: #007bff;
+  color: white;
+  width: fit-content;
+  height: auto;
+  border: none;
+  border-radius: 3px;
+  font-size: 0.85rem;
+  line-height: 1rem;
+  cursor: pointer;
+  margin: 0;
+  padding: 0.75rem 2rem;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.link,
+.shop,
+.dropdown_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  background: none;
+  text-decoration: none;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown_menu,
+.mobile_dropdown_menu {
+  display: none;
+  position: absolute;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  position: fixed;
+  top: 30px;
+  list-style: none;
+  text-align: center;
+  overflow: hidden;
+  z-index: 10000;
+  padding: 1rem 0;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 8px 1px;
+  background-color: var(--white);
+  padding: 0.5% 1%;
+  border-radius: 8px;
+}
+
+.mobile_dropdown_menu {
+  flex-direction: column;
+}
+
+.dropdown.active .dropdown_menu,
+.dropdown.active .mobile_dropdown_menu {
+  display: flex;
+}
+
+.dropdown_category,
+.mobile_dropdown_category {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.dropdown_title,
+.mobile_dropdown_title {
+  padding: 0;
+  margin: 0;
+}
+
+.mobile_dropdown_list,
+.dropdown_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile_dropdown_list {
+  /* flex-direction: row; */
+  align-items: center;
+}
+
+.mobile_dropdown_list a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile_dropdown_list a img {
+  max-width: 100px;
+  height: auto;
+}
+
+.dropdown_link,
+.mobile_dropdown_link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--dark-gray);
+  padding: 0 1rem;
+}
+
+.dropdown_link:hover,
+.mobile_dropdown_link:hover {
+  text-decoration: underline;
+}
+
+.dropdown_button::after {
+  font-family: "Material Symbols Rounded";
+  font-size: 1.75rem;
+  font-weight: 400;
+  content: "\e5c5";
+}
+
+.dropdown_button.active::after,
+.dropdown_button.active::after {
+  content: "\e5c7";
+}
+
+.shop {
+  color: var(--black);
+  border-radius: 12px;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 8px 1px;
+}
+
+.shop:hover {
+  color: var(--gray);
+}
