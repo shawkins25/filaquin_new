@@ -1,5 +1,3 @@
-"use client";
-
 import { NutramaxHeader, Footer } from "@shawkins25/nmx_lib";
 import { headerLogo, footerLogo } from "@/public";
 import Image from "next/image";
@@ -13,13 +11,13 @@ import Bottom from "./components/bottom";
 export default function Home() {
   return (
     <div className={classes.page}>
-      <NutramaxHeader
+      {/* <NutramaxHeader
         logo={
           <div className={classes.header_logo_container}>
             <Image src={headerLogo} alt="Nutramax logo" fill priority />
           </div>
         }
-      />
+      /> */}
       <TopBar />
       <main className={classes.main}>
         <Hero />
@@ -27,13 +25,13 @@ export default function Home() {
         <Table />
         <Bottom />
       </main>
-      <Footer
+      {/* <Footer
         logo={
           <div className={classes.footer_logo_container}>
             <Image src={footerLogo} alt="Nutramax logo" fill />
           </div>
         }
-      />
+      /> */}
     </div>
   );
 }
