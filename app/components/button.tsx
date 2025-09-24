@@ -35,7 +35,6 @@ const Button = ({
   aria_label,
   target,
   imported_class,
-  disabled,
   path,
   menuList,
   mobileMenuList,
