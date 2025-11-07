@@ -41,9 +41,9 @@ const Content = () => {
             </li>
           ))}
         </ul>
-        <p className={classes.exclusive}>
+        {/* <p className={classes.exclusive}>
           Available Exclusively from your Veterinarian.
-        </p>
+        </p> */}
       </div>
       <div className={classes.mobile_product_outer_section}>
         <div className={classes.mobile_product_section}>

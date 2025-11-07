@@ -15,9 +15,9 @@ const Hero = () => {
           postbiotics. Fiber helps support normal stool consistency while
           prebiotics and postbiotics help support digestive health.
         </p>
-        <p className={classes.exclusive}>
+        {/* <p className={classes.exclusive}>
           Available Exclusively from your Veterinarian.
-        </p>
+        </p> */}
       </div>
     </div>
   );
