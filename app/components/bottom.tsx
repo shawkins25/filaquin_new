@@ -1,6 +1,6 @@
 import classes from "./bottom.module.css";
 import Image from "next/image";
-import { greenNMXLogo, vetClaimLogo } from "../../public";
+import { greenNMXLogo} from "../../public";
 import Button from "./button";
 
 const Bottom = () => {

@@ -16,7 +16,7 @@ interface ShopModalProps {
   onClose: () => void;
   productName: string;
   count: string;
-  productImage: any;
+  productImage: HTMLImageElement | string;
   vendors: Vendor[];
 }
 
