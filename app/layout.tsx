@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Geologica, Roboto } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 
@@ -13,11 +13,22 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const geo = Geologica({
+  variable: "--font-geo",
+  weight: "800",
+  subsets: ["latin"],
+});
+
+const robo = Roboto({
+  variable: "--roboto",
+  subsets: ["latin"],
+});
+
 export const metadata: Metadata = {
   title: "Filaquin™ Anal Gland Support Soft Chews for Dogs",
   description:
     "Filaquin™ Anal Gland Support Soft Chews contain pre & postbiotics, beta-glucans, and NMXFBR4™ to support your dog's anal gland, digestive, & immune health.",
-     alternates: { canonical: "https://www.filaquin.com/" },
+  alternates: { canonical: "https://www.filaquin.com/" },
 };
 
 export default function RootLayout({
@@ -41,7 +52,9 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} ${robo.variable} ${geo.variable}`}
+      >
         {children}
       </body>
     </html>
