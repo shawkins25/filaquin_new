@@ -65,7 +65,8 @@
 
 .nav_logo_link {
   min-width: 120px;
-  height: auto;
+  min-height: 30px;
+  padding: 0 !important;
 }
 
 .for_vets_button::after {
