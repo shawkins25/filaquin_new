@@ -15,6 +15,7 @@
 
 .header_container a {
   background-color: transparent;
+  color: var(--text);
 }
 
 .backdrop {
@@ -46,7 +47,7 @@
   margin: 0 2%;
   padding: 0;
   font-weight: 600;
-    color: var(--text);
+  color: var(--text);
 }
 
 .nav_item:hover {
