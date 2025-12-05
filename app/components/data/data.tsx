@@ -80,23 +80,23 @@ export const vendors = [
   {
     name: "Amazon",
     logo: "/amazon.webp",
-    url: "https://amazon.com",
+    url: "https://www.amazon.com/Nutramax-Filaquin-Supplement-Proviable-Postbiotics/dp/B0FMTBWGBW/ref=sr_1_6?crid=1HZ1QDN1ETGA4&dib=eyJ2IjoiMSJ9.LdWjByBDIqsv2_8SzoZzq2323bei3v7tr_ypjaydxCFdXjLEp5__tQO8yn5hrJLr5dyyh2DMwcKvBVIEFpTcHsMzPmpfqUz6ryhqMjMxkPQ.ufZWgTfu20oIGKMoxPbPzJp7Cj_QknaBB82SYsntSo0&dib_tag=se&keywords=filaquin&qid=1764949932&sprefix=filaquin%2Caps%2C113&sr=8-6",
   },
   {
     name: "Chewy",
     logo: "/chewy.webp",
-    url: "https://chewy.com",
+    url: "https://www.chewy.com/nutramax-filaquin-roasted-peanut/dp/3255494",
   },
-  {
-    name: "Walmart",
-    logo: "/walmart.webp",
-    url: "https://walmart.com",
-  },
-  {
-    name: "Allivet",
-    logo: "/allivet.svg",
-    url: "https://allivet.com",
-  },
+  // {
+  //   name: "Walmart",
+  //   logo: "/walmart.webp",
+  //   url: "https://walmart.com",
+  // },
+  // {
+  //   name: "Allivet",
+  //   logo: "/allivet.svg",
+  //   url: "https://allivet.com",
+  // },
 ];
 
 export const petSupplements = [
@@ -269,10 +269,4 @@ export const termsLinks = [
     title: "Web Accessibility",
     path: "https://www.nutramaxlabs.com/policies/web-accessibility-policy",
   },
-];
-
-export const purchaseLinks = [
-  { company: "Amazon", img: "", path: "#" },
-  { company: "Walmart", img: "", path: "#" },
-  { company: "Chewy", img: "", path: "#" },
 ];
