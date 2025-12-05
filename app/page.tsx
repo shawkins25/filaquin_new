@@ -9,6 +9,7 @@ import Hero from "./components/hero";
 import Content from "./components/content";
 import Table from "./components/table";
 import Bottom from "./components/bottom";
+import VideoSection from "./components/video-section";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       <TopBar />
       <main className={classes.main}>
         <Hero />
+        <VideoSection />
         <Content />
         <Table />
         <Bottom />

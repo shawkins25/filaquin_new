@@ -1,11 +1,11 @@
 .button {
-  background-color: #007bff;
   color: white;
-  width: fit-content;
-  height: auto;
+  width: 100%;
+  max-width: 385px;
+  height: 50px;
   border: none;
   border-radius: 3px;
-  font-size: 0.85rem;
+  font-size: 1rem;
   line-height: 1rem;
   cursor: pointer;
   margin: 0;
@@ -29,6 +29,10 @@
   box-shadow: none;
   border: none;
   cursor: pointer;
+}
+
+.link {
+  background: var(--nmx-green);
 }
 
 .dropdown_menu,
@@ -129,8 +133,9 @@
 }
 
 .shop {
-  color: var(--black);
-  border-radius: 12px;
+  color: var(--text);
+  background: var(--yellow);
+  border-radius: 5px;
   font-weight: 600;
   padding: 0.75rem 2rem;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 8px 1px;
@@ -138,4 +143,15 @@
 
 .shop:hover {
   color: var(--gray);
+}
+
+.shop-secondary {
+  background: #ffffff;
+}
+
+.icon_container {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-left: 4px;
 }

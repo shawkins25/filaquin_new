@@ -25,6 +25,7 @@ export default function Table() {
   return (
     <section className={classes.section}>
       <div className={classes.container}>
+        <h1>Filaquin™ Ingredients and Use</h1>
         <div className={classes.card}>
           {/* Tabs */}
           <div className={classes.tabs}>

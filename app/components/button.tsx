@@ -1,8 +1,10 @@
-'use client'
+"use client";
 
 import React from "react";
 import classes from "./button.module.css";
 import logoSRC from "../../public/logo.svg";
+import Image from "next/image";
+import cartIcon from "@/public/cart.svg";
 
 export interface ButtonProps {
   id?: string;
@@ -95,7 +97,10 @@ const Button = ({
         className={`${baseClass} ${classes.shop}`}
         onClick={handleClick}
       >
-        {label}
+        SHOP HERE
+        <div className={classes.icon_container}>
+          <Image src={cartIcon} alt="" fill />
+        </div>
       </button>
     );
   } else if (type === "dropdown") {

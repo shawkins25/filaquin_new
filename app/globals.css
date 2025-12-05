@@ -8,15 +8,16 @@
   --background: #ffffff;
   --foreground: #171717;
 
-  --font-color: #535559;
-    --primary: #086c3c;
+  /* --primary: #086c3c;
   --hover: #065b32;
-  --accent: #0c2f1f;
+  --accent: #0c2f1f; */
+  --nmx-green: #006937;
   --background: #e7e7e9;
-  --text: #1c1c1c;
+  --text: #434242;
   --muted-text: #666;
   --highlight: #9de65f;
   --white: #ffffff;
+  --yellow: #fdbe50;
 }
 
 html,
@@ -80,7 +81,7 @@ li {
   font-family: "Roboto Condensed", sans-serif;
   font-size: clamp(1rem, 1.85vw, 1.25rem);
   line-height: clamp(1.25rem, 2vw, 1.55rem);
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   font-weight: 300;
 }
 

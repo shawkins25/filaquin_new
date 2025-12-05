@@ -5,7 +5,7 @@
   width: 100%;
   background-color: white;
   border-bottom: 3px solid black;
-  max-width: 1440px;
+  padding: 3%;
 }
 
 .logo_container {
@@ -13,15 +13,29 @@
   position: relative;
   aspect-ratio: 3.7333;
   width: 25%;
-  max-width: 275px;
-  margin: 2% auto;
+  max-width: 225px;
+}
+
+.shop-primary {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .top_bar {
+    justify-content: space-between;
+    padding: 3%;
+  }
+
+  .shop-primary {
+    display: flex;
+  }
 }
 
 @media (min-width: 1023px) {
   .top_bar {
-    justify-content: flex-start;
+    justify-content: space-between;
+    padding: 0.25% 3%;
   }
-
   .logo_container {
     margin: 1% 5%;
   }

@@ -1,10 +1,10 @@
-'use client'
+"use client";
 
 import React from "react";
 import classes from "./footer.module.css";
 import {
-  nutramaxSupplements,
-  nutramaxSupplements2,
+  petSupplements,
+  humanSupplements,
   contactInfo,
   aboutLinks,
   termsLinks,
@@ -13,119 +13,94 @@ import {
 import Button from "./button";
 
 interface NutramaxFooterProps {
-  logo?: React.ReactNode; //svg or <img />
+  logo?: React.ReactNode;
 }
+
+interface FooterSectionProps {
+  title: string;
+  links: { label: string; path: string }[];
+}
+const FooterSection = ({ title, links }: FooterSectionProps) => (
+  <div className={classes.section_group}>
+    <h3>{title}</h3>
+    {links.map((link) => (
+      <Button
+        key={link.label}
+        type="link"
+        label={link.label}
+        path={link.path}
+        target="_blank"
+      />
+    ))}
+  </div>
+);
+
+const supplementSections = [
+  ...petSupplements.map((s) => ({
+    title: s.title,
+    links: s.links.map((l) => ({ label: l.header, path: l.path })),
+  })),
+  ...humanSupplements.map((s) => ({
+    title: s.title,
+    links: s.links.map((l) => ({ label: l.header, path: l.path })),
+  })),
+];
+const aboutSection = {
+  title: "About Nutramax",
+  links: aboutLinks.map((l) => ({ label: l.title, path: l.path })),
+};
+const contactSection = {
+  title: "Contact Information",
+  links: contactInfo.map((c) => ({ label: c.title, path: c.path })),
+};
+const vetSection = {
+  title: "Veterinary Services",
+  links: [
+    { label: "MyNutramax Dashboard", path: "https://mynutramax.com/login/" },
+  ],
+};
 
 const Footer = ({ logo }: NutramaxFooterProps) => {
   return (
     <footer className={classes.footer_container}>
-      {/* Logo Section */}
+      {/* Logo */}
       <div className={classes.logo_container}>
         <a
           href="https://www.nutramaxlabs.com/"
-          aria-label="Nutramax Home"
           target="_blank"
+          aria-label="Nutramax Home"
         >
           {logo}
-          {/* <img src={logo} alt="Nutramax logo" className={classes.logo} /> */}
         </a>
       </div>
+      {/* Top Section */}
       <div className={classes.top_section}>
-        {/* Supplements Section */}
-        <div className={classes.supplements_container}>
-          {nutramaxSupplements.map((category) => (
-            <div className={classes.category_container} key={category.title}>
-              <h3>{category.title}</h3>
-              {category.links.map((link) => (
-                <Button
-                  key={link.header}
-                  type="link"
-                  label={link.header}
-                  path={link.path}
-                />
-              ))}
-            </div>
-          ))}
-        </div>
-        <div className={classes.supplements_container}>
-          {nutramaxSupplements2.map((category) => (
-            <div className={classes.category_container} key={category.title}>
-              <h3>{category.title}</h3>
-              {category.links.map((link) => (
-                <Button
-                  key={link.header}
-                  type="link"
-                  label={link.header}
-                  path={link.path}
-                />
-              ))}
-            </div>
-          ))}
-        </div>
-        {/* Contact Information Section */}
-        <div className={classes.contact_container}>
-          <h3>Contact Information</h3>
-          {contactInfo.map((contact) => (
-            <Button
-              key={contact.title}
-              type="link"
-              label={contact.title}
-              path={contact.path}
-            />
-          ))}
-        </div>
-        <div className={classes.about_vet_container}>
-          {/* About Section */}
-          <div className={classes.about_container}>
-            <h3>About Nutramax</h3>
-            {aboutLinks.map((link) => (
-              <Button
-                key={link.title}
-                type="link"
-                label={link.title}
-                path={link.path}
-              />
-            ))}
-          </div>
-        </div>
-        <div className={classes.about_vet_container}>
-          {/* Vet Services Section */}
-          <div className={classes.vet_container}>
-            <h3>Veterinary Services</h3>
-            <Button
-              key={"Vet Services"}
-              type="link"
-              label={"MyNutramax Dashboard"}
-              path={"https://mynutramax.com/login/"}
-            />
-          </div>
-        </div>
+        {supplementSections.map((sec) => (
+          <FooterSection key={sec.title} title={sec.title} links={sec.links} />
+        ))}
+        <FooterSection {...contactSection} />
+        <FooterSection {...aboutSection} />
+        <FooterSection {...vetSection} />
       </div>
+      {/* Bottom Section */}
       <div className={classes.bottom_section}>
-        {/* Social and Terms Section */}
         <div className={classes.social_and_terms_container}>
           <div className={classes.social_container}>
-            {socialLinks.map((link) => (
+            {socialLinks.map((s) => (
               <a
-                key={link.href}
-                className={classes.social_link}
-                href={link.href}
+                key={s.href}
+                href={s.href}
                 target="_blank"
-                rel="noopener noreferrer"
+                className={classes.social_link}
               >
-                <img src={link.src} alt={link.alt} />
-                {link.label}
+                <img src={s.src} alt={s.alt} />
+                {s.label}
               </a>
             ))}
           </div>
           <div className={classes.terms_container}>
-            {termsLinks.map((link) => (
-              <Button
-                key={link.title}
-                type="link"
-                label={link.title}
-                path={link.path}
-              />
+            {termsLinks.map((t) => (
+              <Button key={t.title} type="link" label={t.title} path={t.path} target="_blank"/>
             ))}
           </div>
         </div>

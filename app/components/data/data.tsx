@@ -11,7 +11,6 @@ export const ingredientsData = {
   otherIngredients: `Glycerin, green tea extract, lecithin, mixed tocopherols, peanut flour, rosemary extract, silicon dioxide, starch, and vegetable oil.`,
   additionalInfo: [
     `If your dog has any condition that requires medical attention, you should always consult your veterinarian. Provide adequate water access during product administration. If accidental overconsumption occurs, contact a veterinary healthcare provider immediately.`,
-
   ],
 };
 
@@ -77,7 +76,30 @@ export const stateOptions = [
   "WY",
 ];
 
-export const nutramaxSupplements = [
+export const vendors = [
+  {
+    name: "Amazon",
+    logo: "/amazon.webp",
+    url: "https://amazon.com",
+  },
+  {
+    name: "Chewy",
+    logo: "/chewy.webp",
+    url: "https://chewy.com",
+  },
+  {
+    name: "Walmart",
+    logo: "/walmart.webp",
+    url: "https://walmart.com",
+  },
+  {
+    name: "Allivet",
+    logo: "/allivet.svg",
+    url: "https://allivet.com",
+  },
+];
+
+export const petSupplements = [
   {
     title: "Supplements For Your Pets",
     links: [
@@ -93,7 +115,7 @@ export const nutramaxSupplements = [
   },
 ];
 
-export const nutramaxSupplements2 = [
+export const humanSupplements = [
   {
     title: "Supplements For You",
     links: [
@@ -247,4 +269,10 @@ export const termsLinks = [
     title: "Web Accessibility",
     path: "https://www.nutramaxlabs.com/policies/web-accessibility-policy",
   },
+];
+
+export const purchaseLinks = [
+  { company: "Amazon", img: "", path: "#" },
+  { company: "Walmart", img: "", path: "#" },
+  { company: "Chewy", img: "", path: "#" },
 ];

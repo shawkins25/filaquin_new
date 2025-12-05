@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+
+.video_container {
+  position: relative;
+  width: 100vw;
+  aspect-ratio: 2.444;
+  max-width: 1440px;
+}
+
+.shop-primary {
+  margin-bottom: 5%;
+}
+
+@media (min-width: 480px) {
+  .shop-primary {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 3% 3% 3%;
+  }
+  .video_container {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1023px) {
+  .container {
+    padding: 3%;
+  }
+}

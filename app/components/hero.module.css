@@ -5,8 +5,8 @@
   flex-direction: column;
   text-align: center;
   width: 100%;
-  height: 115vh;
-  background-image: url("/filaquin_hero_mobile_bg.webp");
+  height: 75vh;
+  background-image: url("/hero_bg_mobile.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -26,27 +26,51 @@
 }
 
 .hero_content_container h1 {
-  color: black;
+  color: #3a3939;
+  font-size: clamp(26px, 3.5vw, 40px);
+  line-height: clamp(33px, 3.75vw, 44px);
   max-width: 600px;
+  padding: 0 13%;
 }
 
 .hero_content_container p {
   font-weight: 300;
-  color: black;
+  color: #3a3939;
   font-size: clamp(1.15rem, 1.85vw, 1.15rem);
   line-height: clamp(1.75rem, 2vw, 1.55rem);
   margin: 5% auto;
-    max-width: 665px;
-  }
+  padding: 0 13%;
+  max-width: 665px;
+}
 
-  .hero_content_container .exclusive {
+.hero_content_container .exclusive {
   font-weight: 700;
+}
+
+.logo_container {
+  min-width: 200px;
+  position: relative;
+  aspect-ratio: 6.773;
+  width: 90%;
+  max-width: 375px;
+  margin-bottom: 3%;
+}
+
+.dog_img_container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1.2537;
+  max-width: 585px;
+}
+
+.shop-primary {
+  display: none;
+  background: var(--white);
 }
 
 @media (min-width: 480px) {
   .hero_section {
-    height: 125vh;
-    background-position: bottom 10% right 0;
+    height: 95vh;
   }
 
   .hero_content_container {
@@ -56,44 +80,46 @@
   .hero_content_container p {
     margin: 2% auto;
   }
-}
-
-@media (min-width: 480px) {
-  .hero_section {
-    background-position: bottom 25% right 0;
-  }
-}
-
-@media (min-width: 600px) {
-  .hero_section {
-    height: 135vh;
-    background-position: bottom 35% right 0;
+    .shop-primary {
+    display: flex;
   }
 }
 
 @media (min-width: 768px) {
   .hero_section {
-    height: 110vh;
-    background-image: url("/filaquin_hero_ipad_bg.webp");
-    background-position: bottom 10% right 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/hero_bg_desktop.svg");
+    padding: 2% 2% 0 2%;
   }
 
   .hero_content_container {
-    margin: 1% auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: start;
+    margin: 0 0 3% 0;
+    padding: 0 3%;
+  }
+
+  .hero_content_container h1 {
+    margin: 0;
+    padding: 0;
   }
 
   .hero_content_container p {
-    margin: 1% auto;
+    margin: 0;
+    padding: 0;
   }
 }
 
 @media (min-width: 1024px) {
   .hero_section {
-    height: 80vh;
-    background-image: url("/filaquin_hero_desktop_bg_v2.webp");
-    background-position: center;
-    justify-content: flex-start;
-    align-items: flex-start;
+    height: 60vh;
   }
 
   .hero_content_container {
@@ -104,7 +130,7 @@
   }
 
   .hero_content_container h1 {
-    max-width:  545px;
+    max-width: 545px;
   }
 
   .hero_content_container p {
