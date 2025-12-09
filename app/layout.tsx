@@ -20,7 +20,7 @@ const geo = Geologica({
 });
 
 const robo = Roboto({
-  variable: "--roboto",
+  variable: "--robo",
   subsets: ["latin"],
 });
 

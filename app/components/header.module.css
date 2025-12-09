@@ -16,6 +16,7 @@
 .header_container a {
   background-color: transparent;
   color: var(--text);
+  font-size: .95rem;
 }
 
 .backdrop {

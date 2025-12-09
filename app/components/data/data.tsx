@@ -80,7 +80,7 @@ export const vendors = [
   {
     name: "Amazon",
     logo: "/amazon.webp",
-    url: "https://www.amazon.com/Nutramax-Filaquin-Supplement-Proviable-Postbiotics/dp/B0FMTBWGBW/ref=sr_1_6?crid=1HZ1QDN1ETGA4&dib=eyJ2IjoiMSJ9.LdWjByBDIqsv2_8SzoZzq2323bei3v7tr_ypjaydxCFdXjLEp5__tQO8yn5hrJLr5dyyh2DMwcKvBVIEFpTcHsMzPmpfqUz6ryhqMjMxkPQ.ufZWgTfu20oIGKMoxPbPzJp7Cj_QknaBB82SYsntSo0&dib_tag=se&keywords=filaquin&qid=1764949932&sprefix=filaquin%2Caps%2C113&sr=8-6",
+    url: "https://www.amazon.com/dp/B0FMTBWGBW?maas=maas_adg_3CEC125F2B76B6530865EF93E44468C1_afap_abs&ref_=aa_maas&tag=maas",
   },
   {
     name: "Chewy",
