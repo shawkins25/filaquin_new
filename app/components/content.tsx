@@ -68,7 +68,7 @@ const Content = () => {
           <h1>
             Filaquin<span>&#8482;</span> Anal Gland Supplement For Dogs
           </h1>
-          <h3>Count: 90 Soft Chews</h3>
+          {count === "90" ? <h3>Count: 90 Soft Chews</h3> : <h3>Count: 132 Soft Chews</h3>}
           <ul className={classes.content_bullet_list}>
             {contentBullets.map((item) => (
               <li key={item} className={classes.bullet_point}>
