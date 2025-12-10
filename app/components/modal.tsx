@@ -3,6 +3,7 @@
 import Image from "next/image";
 import classes from "./modal.module.css";
 import { back_arrow } from "@/public";
+import type { StaticImageData } from "next/image";
 
 interface Vendor {
   name: string;
@@ -16,7 +17,7 @@ interface ShopModalProps {
   onClose: () => void;
   productName: string;
   count: string;
-  productImage: HTMLImageElement | string;
+  productImage: HTMLImageElement | string | StaticImageData;
   vendors: Vendor[];
 }
 

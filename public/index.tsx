@@ -2,7 +2,7 @@
 
 import headerLogo from "./logo.svg";
 import filaquinLogo from "./filaquin_logo.svg";
-import filaquinBag from "./filaquin_bag.svg";
+import filaquinBag from "./filaquin_90ct_bag.webp";
 import nmxSmallLogoSVG from "./nmxSmallLogo.svg";
 import nmxSmallLogo from "./nmx_small_logo.webp";
 import footerLogo from "./nutramax_logo_white.webp";
